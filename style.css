@@ -1,0 +1,331 @@
+#dropdown 
+{
+  text-align: center;
+}
+html
+{
+  background:#FFFFFF; 
+  }
+body
+{
+  min-height: 100%;
+  position: relative;
+}
+ul 
+{
+  display: ;
+  width: 500px;
+  margin: auto;
+}
+header 
+{ 
+  text-align: center;
+}
+ul { 
+  list-style-type: none ;
+  margin-left: 0;
+  padding-left: 0;
+}
+li 
+{ 
+  margin-bottom: 15px; 
+}
+#header
+{
+  height:120px;
+  background:blue;
+}
+#nav li 
+{
+  display:inline;
+  list-style: none;
+  margin:0;
+}
+#nav a
+{
+  color: #DDDDDD;
+}
+.carousel
+{
+  width: 50%;
+  height: 80%;
+  margin: auto;
+}
+.carousel img
+{
+  width: 100%;
+}
+#contact
+{
+  position: top-left;
+}
+#footer
+{
+  background:#002F2F;
+  position: relative;
+  margin-top: 150px;
+  width: 100%;
+  height: 70px;
+  clear:both;
+}
+.copyright p
+{
+  color: #DDDDDD;
+}
+#footer i 
+{
+  font-size: 22px;
+  color: #DDDDDD;
+}
+#footer i:hover
+{
+  color: white;
+}
+#navbar-brand 
+{
+  color:#DDDDDD;
+}
+.navbar-inverse .navbar-brand 
+{
+    color:  #DDDDDD;
+}
+.titre1
+{
+  color: #DDDDDD;
+}
+
+
+  #block_page{
+    width:1700px;
+    margin:auto;
+
+  }
+
+  /* Image defilante */
+
+  #slideshow {
+position: relative;
+width: 1500px;
+height: 150px;
+margin:  20px auto;
+overflow: hidden;
+}
+
+#sContent li {
+display: inline;
+margin-left: 40px;
+}
+
+#sContent {
+display:flex;
+position: absolute;
+top: 0;
+left: 0;
+width: 1500px;
+margin: 0;
+padding: 0;
+
+/*CSS3 keyframes animation*/
+animation-name: AutoSlide;
+animation-duration: 20s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+}
+
+
+/*Partie section */
+
+  #block_section{
+    display: flex;
+    width: 100%;
+  
+  }
+
+  #section_div{
+    margin-left: 100px;
+    height: 313px;
+  }
+
+   /* Article milieu */
+
+  article{
+    position: relative;
+    top: 0px;
+    left: 10px;
+    text-align: justify;
+    width:600px;
+    border: 1px solid black;
+    box-shadow: 3px 3px green;
+  }
+
+  #article_Haut{
+    width: 500px
+  }
+
+
+  #legende{
+    display: flex;
+
+  }
+
+  #legende_text{
+    position: relative;
+    top: 5px;
+    margin-left: 10px;
+    line-height: 70px;
+    
+  }
+
+  #legende_text p{
+    width: 500px;
+    line-height: 40px;
+    
+  }
+
+  /* PARTIE ASIDE */
+
+  aside{
+    position: relative;
+    top:-445px;
+    left:1280px;
+    width:200px;
+    display:flex;
+    flex-direction: column;
+    border: 1px solid black;
+    box-shadow: 3px 3px green;
+  }
+
+  #background_img{
+    width: 200px;
+    height: 150px;
+    background-image: url("photopj.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Bare de defilement */
+
+  #colonne_defilemant{
+    width: 200px;
+    height: 500px;
+    overflow: scroll;
+
+  }
+
+  footer{
+    background: black;
+  }
+
+  #div_footer{
+    background-color: rgba(0,0,0,1);
+  }
+
+@media screen and (max-width: 900px){
+
+  #block_page{
+    width:900px;
+    margin:auto;
+
+  }
+
+
+  #block_section{
+    display: flex;
+    flex-direction: column;
+
+
+  }
+
+
+  #section_div{
+    
+    margin-left: 10px;
+    height: 313px;
+  }
+
+  article{
+    position: relative;
+    top: 0px;
+    left: 10px;
+    text-align: justify;
+    width:560px;
+    box-shadow: 3px 3px green;
+    margin-top: 10px;
+  }
+
+
+  aside{
+    position: relative;
+    top:-768px;
+    left:580px;
+    width:200px;
+    display:flex;
+    flex-direction: column;
+    border: 1px solid black;
+    box-shadow: 3px 3px green;
+  }
+
+  #colonne_defilemant{
+    height: 605px;
+  }
+
+
+}
+
+    @keyframes AutoSlide {
+    5% {
+        left: 0px; /*1ère image*/
+    }
+    10% {
+        left: 0px; /*idem pour attente*/
+    }
+    15% {
+        left: -150px; /*2ème image*/
+    }
+    20% {
+        left: -150px; /*idem pour attente*/
+    }
+    25% {
+        left: -300px; /*3ème image*/
+    }
+    30% {
+        left: -300px; /*idem pour attente*/
+    }
+    35% {
+        left: -450px; /*4ère image*/
+    }
+
+    40% {
+        left: -450px; /*idem pour attente*/
+    }
+    45% {
+        left: -600px; /*5ère image*/
+    }
+    50% {
+        left: -600px; /*idem pour attente*/
+    }
+    55% {
+        left: -750px; /* 6ère image */
+    }
+    60% {
+        left: -750px; /*idem pour attente*/
+    }
+    65% {
+        left: -900px; /* 7ère image */
+    }
+    70% {
+        left: -900px; /*idem pour attente*/
+    }
+
+    80% {
+        left: 1050px; /* 8ère image */
+    }
+
+    90% {
+         left: 1050px; /*idem pour attente*/
+    }
+
+    100%{
+         left:0px;
+    }
+}
